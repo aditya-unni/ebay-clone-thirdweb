@@ -12,7 +12,7 @@ const Home: NextPage = () => {
 
   const { contract } = useContract(process.env.NEXT_PUBLIC_MARKETPLACE_CONTRACT, 'marketplace');
   const { data: listings, isLoading: loadinglistings } = useActiveListings(contract);
-  console.log(listings)
+  
   return (
     <div >
       <Header />
